@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/single_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:contentDescription="someInfo"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/single_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="oil"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/single_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100$"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/submit_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_gravity="center"
+            android:onClick="addToCart"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
